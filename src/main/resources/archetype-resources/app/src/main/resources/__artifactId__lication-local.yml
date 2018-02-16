@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+datasources:
+  mysql:
+    jdbcUrl: jdbc:mysql://localhost:3306/mediaservice
+    driverClassName: com.mysql.jdbc.Driver
+    username: scero
+    password: Dragon
+    poolName: AtlasHikariCP
+    maxLifetime: 1200000
+    maximumPoolSize: 10
+    minimumIdle: 1
+
+
+archetype:
+  configurationValue: test

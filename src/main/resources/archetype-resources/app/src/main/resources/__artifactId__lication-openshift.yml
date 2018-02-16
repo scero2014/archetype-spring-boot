@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+datasources:
+#  h2:
+#    jdbcUrl: jdbc:h2:/data/database.dat;DB_CLOSE_DELAY=-1
+#    driverClassName: org.h2.Driver
+#    username: sa
+#    password: as
+#    poolName: AtlasHikariCP
+#    maxLifetime: 1200000
+#    maximumPoolSize: 10
+#    minimumIdle: 1
+#    console: true
+  mysql:
+    jdbcUrl: jdbc:mysql://mediaservicedb:3306/mediaservice
+    driverClassName: com.mysql.jdbc.Driver
+    username: scero
+    password: Dragon
+    poolName: AtlasHikariCP
+    maxLifetime: 1200000
+    maximumPoolSize: 10
+    minimumIdle: 1
+
+mediaService:
+  recursiveTasksForScraping: 2
+  poolRequests: 4
+  requestsTimeoutSeconds: 5
+  # requestsAgent:
+  # httpProxy:
+  secure: false
+  scheduleScrapAll: "0 0 3 * * *" # 3:00
+
+database:
+  server: true

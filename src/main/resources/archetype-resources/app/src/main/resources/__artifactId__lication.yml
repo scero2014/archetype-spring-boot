@@ -1,0 +1,27 @@
+info:
+  description: mediaservice
+  version: 1.0
+
+server:
+  context-path: /
+
+spring:
+  profiles:
+    active: @defaultSpringBootProfile@
+
+management:
+  context-path: /manage
+  security:
+    enabled: false
+    roles: ACTUATOR
+  info:
+    git:
+      enabled: true
+      mode: simple
+
+flyway:
+    enabled: true
+
+appSecurity:
+  user: scero
+  password: 583F4BE146B6127F9E4F3F036CE7DF43
