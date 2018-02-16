@@ -24,6 +24,6 @@ Creación de un arquetipo en base a un proyecto:
 
 5. Instalar en local el arquetipo "mvn clean install"
 
-6. Utilizar el arquetipo en el directorio que se desee: "mvn archetype:generate -DarchetypeCatalog=local -DgroupId=org.dune -DartifactId=pollito -Dversion=1.0" 
+6. Utilizar el arquetipo en el directorio que se desee: "mvn archetype:generate -DarchetypeCatalog=local -DgroupId=net.scero -DartifactId=test -Dversion=1.0 -Dpackage=net.scero.test" 
 
 
